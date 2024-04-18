@@ -1,41 +1,39 @@
 # Verificación de Conectividad con Endpoints de Intune
 
-¡Hola! Soy Juan David Rivera, especialista en ciberseguridad. Hoy te ofrezco un script de PowerShell diseñado para verificar la conectividad con los endpoints de Microsoft Intune utilizando direcciones IP y URLs. Esta herramienta es esencial para garantizar que la infraestructura de tu empresa mantenga una comunicación efectiva y segura con los servicios de Intune.
+¡Hola! Soy Juan David Rivera, especialista en ciberseguridad. Te presento un script de PowerShell para verificar la conectividad con los endpoints de Microsoft Intune utilizando direcciones IP y URLs, esencial para mantener comunicaciones seguras y efectivas con los servicios de Intune.
 
 ## Contexto
 
-Con la creciente adopción de servicios en la nube, la continuidad de las operaciones empresariales depende en gran medida de conexiones de red robustas y confiables. Interrupciones en la conectividad pueden llevar a pérdidas significativas en productividad y potencial económico. Este script proactivamente identifica problemas de conectividad, permitiendo a los administradores de TI resolver rápidamente incidencias antes de que afecten las operaciones.
+Con el incremento de la adopción de servicios en la nube, la continuidad operativa empresarial depende de conexiones de red robustas. Este script identifica proactivamente problemas de conectividad, permitiendo a los administradores de TI actuar rápidamente para mitigar impactos.
 
 ## Características del Script
 
-El script automatiza varias tareas críticas:
+Este script automatiza tareas críticas incluyendo:
 
-- **Inicialización de Registro**: Prepara un entorno de log, creando directorios necesarios para almacenar los registros de las pruebas de conectividad.
-- **Recuperación de Endpoints de Intune**: Utiliza la API de Office 365 para obtener las direcciones IP y URLs relevantes a los servicios de Intune.
-- **Resolución de Nombres DNS**: Para URLs especificadas, resuelve los nombres DNS y maneja distintos tipos de entrada, como URLs y direcciones IP.
-- **Pruebas de Conectividad**: Ejecuta pruebas de conectividad usando `Test-NetConnection` para evaluar la accesibilidad de cada endpoint y registra los resultados.
-
-Este enfoque estructurado y automatizado asegura una evaluación completa y documentada de la conectividad, facilitando el mantenimiento y la solución de problemas de red.
+- **Inicialización de Registro**: Configura un entorno de log para almacenar registros de conectividad.
+- **Recuperación de Endpoints de Intune**: Obtiene las direcciones IP y URLs de los servicios de Intune mediante la API de Office 365.
+- **Resolución de Nombres DNS**: Resuelve los nombres DNS y maneja diferentes tipos de entrada, como URLs y direcciones IP.
+- **Pruebas de Conectividad**: Realiza pruebas de conectividad y documenta los resultados, facilitando la solución de problemas.
 
 ## Prerrequisitos
 
-Antes de utilizar este script, asegúrate de tener:
+Antes de ejecutar este script, asegúrate de cumplir con los siguientes requisitos:
 
-- **PowerShell 5.1 o superior**: Necesario para la ejecución de scripts avanzados y manejo de errores.
-- **Acceso a Internet**: Imprescindible para realizar las pruebas de conectividad y resolución de DNS.
-- **Permisos de Administrador**: Requeridos para ejecutar comandos que pueden afectar la configuración del sistema y realizar cambios en los directorios.
+- **PowerShell 5.1 o superior**: Necesario para la ejecución de scripts avanzados.
+- **Acceso a Internet**: Imprescindible para realizar pruebas de conectividad.
+- **Permisos de Administrador**: Requeridos para ejecutar comandos que afectan la configuración del sistema.
 
 ## Instrucciones de Uso
 
-Sigue estos pasos para ejecutar el script efectivamente:
+Para usar este script, sigue estos pasos:
 
-1. **Descargar el Script**: Clona este repositorio en tu máquina local o descarga el script directamente desde GitHub.
-2. **Abrir PowerShell como Administrador**: Esto es necesario para permitir la ejecución de scripts y la modificación de configuraciones de red.
-3. **Navegar al Directorio del Script**: Utiliza `cd ruta_del_script` para colocarte en el directorio donde resides el script.
-4. **Ejecutar el Script**: Inicia el script con `.\Intune_Endpoint_Connectivity_Check.ps1`. Los logs y resultados se guardarán automáticamente en los directorios configurados dentro del script.
+1. **Descargar el Script**: Descarga el script desde el [repositorio de GitHub](https://github.com/judariva/Intune_Endpoint_Connectivity_Check/releases/latest).
+2. **Abrir PowerShell como Administrador**: Esto es necesario para ejecutar scripts y modificar configuraciones de red.
+3. **Navegar al Directorio del Script**: Usa `cd ruta_del_script` para moverte al directorio donde resides el script.
+4. **Ejecutar el Script**: Inicia el script con `.\Intune_Endpoint_Connectivity_Check.ps1`. Los resultados se guardarán en los directorios configurados.
 
 ## Contacto y Soporte
 
-Si encuentras problemas o tienes preguntas sobre la personalización y ejecución del script, no dudes en contactarme. Estoy aquí para ayudarte a optimizar la seguridad y funcionalidad de tu infraestructura IT.
+Para preguntas o asistencia personalizada con el script, contáctame. Estoy aquí para ayudar a mejorar la seguridad y eficiencia de tu infraestructura IT.
 
 Visita mi página web para más recursos y contacto: [https://juandavidrivera.com/](https://juandavidrivera.com/)
